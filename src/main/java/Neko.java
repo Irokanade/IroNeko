@@ -16,6 +16,7 @@ public class Neko {
     private void initComponents() {
         frame = new JFrame("Neko");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setAlwaysOnTop(true);
 
         Container contentPane = frame.getContentPane();
         contentPane.setLayout(null);
@@ -25,7 +26,6 @@ public class Neko {
         catLabel = new JLabel();
         catLabel.setSize(50, 50);
         catLabel.setLocation(75, 75);
-        catLabel.setDoubleBuffered(true);
         contentPane.add(catLabel);
 
         contentPane.addMouseMotionListener(new MouseAdapter() {
